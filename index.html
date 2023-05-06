@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Convertisseur</title>
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <script src="https://kit.fontawesome.com/0be9679db4.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/convert.js"></script>
+
+  
+</head>
+
+<body>
+
+    <main>
+
+        <h1 id="title">PackConverter</h1>
+        <p id="desc">
+            <span>Ce site vous permet de rendre vous packs paladium compatibles avec bloodshed et inversement.</span>
+            <span>Il vous suffit de déposer votre resourcepack dans la zone ci-dessous.</span>
+            <span>Les packs sont convertis localement, aucun fichier n'est envoyé sur le serveur.</span>
+        </p>
+        <div id="dropzone">
+            <i class="fa-solid fa-upload"></i>
+            <span>Glissez-déposez votre resourcepack ici ou cliquez pour sélectionner un fichier</span>
+            <input type="file" id="file-input" accept=".zip">
+        </div>
+
+        <div id="mode-selector">
+            <span class="pack-type" id="src">Paladium</span>
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="pack-type" id="dst">Bloodshed</span>
+        </div>
+        
+
+        <button id="download-button" disabled>Télécharger</button>
+
+
+
+
+    </main>

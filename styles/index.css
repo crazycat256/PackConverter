@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #1E1E1E;
+    --secondary-color: #EFEFEF;
+    --accent-color: #f5820b;
+    
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 100vh;
+}
+
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 40px 0;
+    border: 2px solid #555;
+    border-radius: 10px;
+    color: var(--accent-color);
+}
+
+#desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    color: var(--secondary-color)
+}
+#desc span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#dropzone {
+    max-width: 900px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 50px;
+    border: 2px dashed #555;
+    color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#dropzone span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#dropzone .fa-solid {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#file-input {
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#file-input:hover {
+    cursor: pointer;
+}
+
+#mode-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#mode-selector:hover {
+    cursor: pointer;
+}
+
+.pack-type {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px 0;
+    width: 115px;
+    border-radius: 8px;
+    border: 2px solid #555;
+    color: var(--accent-color);
+}
+
+#mode-selector .fa-solid {
+    margin: 0 10px;
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+
+#download-button {
+    padding: 12px 24px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#download-button:hover {
+    background-color: #FFA047;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#download-button:disabled {
+    background-color: #858585;
+    cursor: not-allowed;
+}

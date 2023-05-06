@@ -1,0 +1,318 @@
+{
+    "required_dirs": [
+        "assets/minecraft/lang",
+        "assets/minecraft/textures/items",
+        "assets/minecraft/textures/blocks",
+        "assets/minecraft/textures/models/armor",
+        "assets/palamod/lang",
+        "assets/palamod/textures/items/weapons",
+        "assets/palamod/textures/blocks",
+        "assets/palamod/textures/models"
+    ],
+    "lang_paths": [
+        {
+            "palamod": "assets/palamod/lang/en_US.lang",
+            "bloodshed": "assets/minecraft/lang/en_US.lang"
+        },
+        {
+            "palamod": "assets/palamod/lang/fr_FR.lang",
+            "bloodshed": "assets/minecraft/lang/fr_FR.lang"
+        }
+    ],
+    "assets": [
+        {
+            "palamod": "palamod/textures/items/paladium_sword",
+            "bloodshed": "minecraft/textures/items/blood_sword"
+        },
+        {
+            "palamod": "palamod/textures/items/paladium_helmet",
+            "bloodshed": "minecraft/textures/items/blood_helmet"
+        },
+        {
+            "palamod": "palamod/textures/items/paladium_chestplate",
+            "bloodshed": "minecraft/textures/items/blood_chestplate"
+        },
+        {
+            "palamod": "palamod/textures/items/paladium_leggings",
+            "bloodshed": "minecraft/textures/items/blood_leggings"
+        },
+        {
+            "palamod": "palamod/textures/items/paladium_boots",
+            "bloodshed": "minecraft/textures/items/blood_boots"
+        },
+        {
+            "palamod": "palamod/textures/models/paladium_armor_1",
+            "bloodshed": "minecraft/textures/models/armor/blood_layer_1"
+        },
+        {
+            "palamod": "palamod/textures/models/paladium_armor_2",
+            "bloodshed": "minecraft/textures/models/armor/blood_layer_2"
+        },
+        {
+            "palamod": "palamod/textures/items/titane_sword",
+            "bloodshed": "minecraft/textures/items/titanic_sword"
+        },
+        {
+            "palamod": "palamod/textures/items/titane_helmet",
+            "bloodshed": "minecraft/textures/items/titanic_helmet"
+        },
+        {
+            "palamod": "palamod/textures/items/titane_chestplate",
+            "bloodshed": "minecraft/textures/items/titanic_chestplate"
+        },
+        {
+            "palamod": "palamod/textures/items/titane_leggings",
+            "bloodshed": "minecraft/textures/items/titanic_leggings"
+        },
+        {
+            "palamod": "palamod/textures/items/titane_boots",
+            "bloodshed": "minecraft/textures/items/titanic_boots"
+        },
+        {
+            "palamod": "palamod/textures/models/titane_armor_1",
+            "bloodshed": "minecraft/textures/models/armor/titanic_layer_1"
+        },
+        {
+            "palamod": "palamod/textures/models/titane_armor_2",
+            "bloodshed": "minecraft/textures/models/armor/titanic_layer_2"
+        },
+        {
+            "palamod": "palamod/textures/items/amethyst_sword",
+            "bloodshed": "minecraft/textures/items/magic_sword"
+        },
+        {
+            "palamod": "palamod/textures/items/amethyst_helmet",
+            "bloodshed": "minecraft/textures/items/magic_helmet"
+        },
+        {
+            "palamod": "palamod/textures/items/amethyst_chestplate",
+            "bloodshed": "minecraft/textures/items/magic_chestplate"
+        },
+        {
+            "palamod": "palamod/textures/items/amethyst_leggings",
+            "bloodshed": "minecraft/textures/items/magic_leggings"
+        },
+        {
+            "palamod": "palamod/textures/items/amethyst_boots",
+            "bloodshed": "minecraft/textures/items/magic_boots"
+        },
+        {
+            "palamod": "palamod/textures/models/amethyst_armor_1",
+            "bloodshed": "minecraft/textures/models/armor/magic_layer_1"
+        },
+        {
+            "palamod": "palamod/textures/models/amethyst_armor_2",
+            "bloodshed": "minecraft/textures/models/armor/magic_layer_2"
+        },
+        {
+            "palamod": "palamod/textures/items/endium_sword",
+            "bloodshed": "minecraft/textures/items/nocturne_sword"
+        },
+        {
+            "palamod": "palamod/textures/items/endium_helmet",
+            "bloodshed": "minecraft/textures/items/nocturne_helmet"
+        },
+        {
+            "palamod": "palamod/textures/items/endium_chestplate",
+            "bloodshed": "minecraft/textures/items/nocturne_chestplate"
+        },
+        {
+            "palamod": "palamod/textures/items/endium_leggings",
+            "bloodshed": "minecraft/textures/items/nocturne_leggings"
+        },
+        {
+            "palamod": "palamod/textures/items/endium_boots",
+            "bloodshed": "minecraft/textures/items/nocturne_boots"
+        },
+        {
+            "palamod": "palamod/textures/models/endium_armor_1",
+            "bloodshed": "minecraft/textures/models/armor/nocturne_layer_1"
+        },
+        {
+            "palamod": "palamod/textures/models/endium_armor_2",
+            "bloodshed": "minecraft/textures/models/armor/nocturne_layer_2"
+        },
+        {
+            "palamod": "palamod/textures/items/HyperJumpStick",
+            "bloodshed": "minecraft/textures/items/mega_jump_stick"
+        },
+        {
+            "palamod": "palamod/textures/items/HealStick",
+            "bloodshed": "minecraft/textures/items/heal_stick"
+        },
+        {
+            "palamod": "palamod/textures/items/StrenghtStick",
+            "bloodshed": "minecraft/textures/items/strength_stick"
+        },
+        {
+            "palamod": "palamod/textures/items/StickOfGod",
+            "bloodshed": "minecraft/textures/items/royal_stick"
+        },
+        {
+            "palamod": "palamod/textures/items/SpeedStick",
+            "bloodshed": "minecraft/textures/items/speed_stick"
+        },
+        {
+            "palamod": "palamod/textures/items/hangglider",
+            "bloodshed": "minecraft/textures/items/hang_glider"
+        },
+        {
+            "palamod": "palamod/textures/items/paladium_apple",
+            "bloodshed": "minecraft/textures/items/blood_apple"
+        },
+        {
+            "palamod": "palamod/textures/items/weapons/potion_launcher",
+            "bloodshed": "minecraft/textures/items/potion_launcher"
+        },
+        {
+            "palamod": "palamod/textures/items/InfernalKnocker",
+            "bloodshed": "minecraft/textures/items/anti_covid"
+        },
+        {
+            "palamod": "palamod/textures/items/weapons/paladium_bow",
+            "bloodshed": "minecraft/textures/items/magic_bow_standby"
+        },
+        {
+            "palamod": "palamod/textures/items/weapons/paladium_bow_0",
+            "bloodshed": "minecraft/textures/items/magic_bow_pulling_0"
+        },
+        {
+            "palamod": "palamod/textures/items/weapons/paladium_bow_1",
+            "bloodshed": "minecraft/textures/items/magic_bow_pulling_1"
+        },
+        {
+            "palamod": "palamod/textures/items/weapons/paladium_bow_2",
+            "bloodshed": "minecraft/textures/items/magic_bow_pulling_2"
+        },
+        {
+            "palamod": "palamod/textures/blocks/slime_green",
+            "bloodshed": "minecraft/textures/blocks/slim_pad"
+        }
+    ],
+    "items": [
+        {
+            "palamod": "item.paladium.sword.name",
+            "bloodshed": "item.blood_sword.name"
+        },
+        {
+            "palamod": "item.paladium.helmet.name",
+            "bloodshed": "item.helmetBlood.name"
+        },
+        {
+            "palamod": "item.paladium.chestplate.name",
+            "bloodshed": "item.chestplateBlood.name"
+        },
+        {
+            "palamod": "item.paladium.leggings.name",
+            "bloodshed": "item.leggingsBlood.name"
+        },
+        {
+            "palamod": "item.paladium.boots.name",
+            "bloodshed": "item.bootsBlood.name"
+        },
+        {
+            "palamod": "item.titane.sword.name",
+            "bloodshed": "item.titanic_sword.name"
+        },
+        {
+            "palamod": "item.titane.helmet.name",
+            "bloodshed": "item.helmetTitanic.name"
+        },
+        {
+            "palamod": "item.titane.chestplate.name",
+            "bloodshed": "item.chestplateTitanic.name"
+        },
+        {
+            "palamod": "item.titane.leggings.name",
+            "bloodshed": "item.leggingsTitanic.name"
+        },
+        {
+            "palamod": "item.titane.boots.name",
+            "bloodshed": "item.bootsTitanic.name"
+        },
+        {
+            "palamod": "item.amethyst.sword.name",
+            "bloodshed": "item.magic_sword.name"
+        },
+        {
+            "palamod": "item.amethyst.helmet.name",
+            "bloodshed": "item.helmetMagic.name"
+        },
+        {
+            "palamod": "item.amethyst.chestplate.name",
+            "bloodshed": "item.chestplateMagic.name"
+        },
+        {
+            "palamod": "item.amethyst.leggings.name",
+            "bloodshed": "item.leggingsMagic.name"
+        },
+        {
+            "palamod": "item.amethyst.boots.name",
+            "bloodshed": "item.bootsMagic.name"
+        },
+        {
+            "palamod": "item.endium.sword.name",
+            "bloodshed": "item.nocturne_sword.name"
+        },
+        {
+            "palamod": "item.endium.helmet.name",
+            "bloodshed": "item.helmetNocturne.name"
+        },
+        {
+            "palamod": "item.endium.chestplate.name",
+            "bloodshed": "item.leggingsNocturne.name"
+        },
+        {
+            "palamod": "item.endium.leggings.name",
+            "bloodshed": "item.chestplateNocturne.name"
+        },
+        {
+            "palamod": "item.endium.boots.name",
+            "bloodshed": "item.bootsNocturne.name"
+        },
+        {
+            "palamod": "item.hyperjumpstick.name",
+            "bloodshed": "item.megaJumpStick.name"
+        },
+        {
+            "palamod": "item.healstick.name",
+            "bloodshed": "item.healstick.name"
+        },
+        {
+            "palamod": "item.strenghtstick.name",
+            "bloodshed": "item.strengthstick.name"
+        },
+        {
+            "palamod": "item.stickofgod.name",
+            "bloodshed": "item.royalstick.name"
+        },
+        {
+            "palamod": "item.speedstick.name",
+            "bloodshed": "item.speedstick.name"
+        },
+        {
+            "palamod": "item.hangglider.name",
+            "bloodshed": "item.hangGlider.name"
+        },
+        {
+            "palamod": "item.paladium.apple.name",
+            "bloodshed": "item.bloodApple.name"
+        },
+        {
+            "palamod": "item.potion_launcher.name",
+            "bloodshed": "item.potionLauncher.name"
+        },
+        {
+            "palamod": "item.infernalknocker.name",
+            "bloodshed": "item.anti_covid.name"
+        },
+        {
+            "palamod": "item.paladiumbow.name",
+            "bloodshed": "item.magic_bow.name"
+        },
+        {
+            "palamod": "tile.slimepad_green.name",
+            "bloodshed": "tile.slimPad.name"
+        }
+    ]
+}
