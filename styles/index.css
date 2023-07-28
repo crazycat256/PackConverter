@@ -65,7 +65,7 @@ main {
 #dropzone {
     max-width: 900px;
     width: 100%;
-    height: 60px;
+    height: 120px;
     position: relative;
     display: flex;
     flex-direction: column;
