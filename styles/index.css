@@ -37,10 +37,25 @@ main {
     font-size: 48px;
     font-weight: bold;
     padding: 10px;
-    margin: 40px 0;
+    margin: 10px 0;
     border: 2px solid #555;
     border-radius: 10px;
     color: var(--accent-color);
+}
+
+#author {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px;
+    margin-bottom: 40px;
+    border: 2px solid #555;
+    border-radius: 7px;
+    color: var(--accent-color);
+}
+#author:hover {
+    cursor: pointer;
 }
 
 #desc {
