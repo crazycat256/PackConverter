@@ -1,10 +1,11 @@
-<div align="center" style="display: flex;justify-content: center;font-size: 48px;font-weight: bold;padding: 10px;margin: 10px 0;border: 2px solid #555;border-radius: 10px;color: #f5820b;">
+<div align="center">
     <h1>
-        PackConverter
+        <a href="https://pack-converter.netlify.app/">
+            PackConverter
+        </a>
     </h1>
 </div>
 
----
 
 This website allows you to make your [Paladium](https://paladium-pvp.fr/) recourcepacks compatible with [Bloodshed](https://bloodshed.fr/) and vice versa.
 Hosted on [pack-converter.netlify.app](https://pack-converter.netlify.app/)
