@@ -1,11 +1,8 @@
+/**
+ * @param {JSZip} pack
+ * @returns {JSZip}
+ */
 async function convertPack(pack) {
-    /**
-     * @param {JSZip} pack
-     * @param {'palamod2bloodshed'|'bloodshed2palamod'} mode
-     * @returns {JSZip}
-     */
-
-
     // Check if the pack is valid
     var assetsExists = false;
     for (let file in pack.files) {
