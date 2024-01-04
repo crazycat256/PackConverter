@@ -1,4 +1,4 @@
-<div style="text-align:center;">
+<div align="center">
     <h1 style="display: flex;justify-content: center;font-size: 48px;font-weight: bold;padding: 10px;margin: 10px 0;border: 2px solid #555;border-radius: 10px;color: #f5820b;">
         PackConverter
     </h1>
