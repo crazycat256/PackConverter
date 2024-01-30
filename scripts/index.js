@@ -83,17 +83,57 @@ function unhighlight() {
 }
 
 function handleFiles(e) {
-    inputFile = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
     outputFileContent = {};
+    if (e.dataTransfer && e.dataTransfer.items[0].webkitGetAsEntry().isFile) {
+        inputFile = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+    } else {
+        inputFile = e.dataTransfer.items[0].webkitGetAsEntry();
+    }
     convertFile();
+}
+
+function convertDirectoryToJSZip(directoryEntry, zip) {
+    return new Promise((resolve, reject) => {
+        directoryEntry.createReader().readEntries((entries) => {
+            if (entries.length === 0) {
+                resolve(zip);
+                return;
+            }
+
+            let promises = [];
+            entries.forEach((entry) => {
+                if (entry.isDirectory) {
+                    let newZip = zip.folder(entry.name);
+                    promises.push(convertDirectoryToJSZip(entry, newZip));
+                } else {
+                    promises.push(new Promise((resolveFile, rejectFile) => {
+                        entry.file((file) => {
+                            const reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                zip.file(entry.name, e.target.result);
+                                resolveFile();
+                            };
+
+                            reader.readAsArrayBuffer(file);
+                        });
+                    }));
+                }
+            });
+
+            Promise.all(promises)
+                .then(() => resolve(zip));
+        });
+    });
 }
 
 function convertFile() {
 
     if (!inputFile) return;
 
-    if (!inputFile.name.endsWith('.zip')) {
-        alert('Le fichier doit être un .zip, pas un .' + inputFile.name.split('.')[-1]);
+    if (!inputFile.name.endsWith('.zip') && !inputFile.isDirectory) {
+        let spl = inputFile.name.split('.');
+        alert('Le fichier doit être un .zip ou un dossier, pas un .' + spl[spl.length - 1]);
         return;
     }
 
@@ -104,27 +144,33 @@ function convertFile() {
     downloadButton.textContent = "Conversion en cours...";
     downloadButton.disabled = true;
 
-    pack.loadAsync(inputFile).then(function() {
+    let promise;
+    if (!inputFile.isDirectory) {
+        promise = pack.loadAsync(inputFile);
+    } else {
+        promise = convertDirectoryToJSZip(inputFile, pack);
+    }
+    
 
+    promise.then(function() {
         convertPack(pack).then(function(convertedPack) {
 
-          if (!convertedPack) {
-                uploadText.textContent = "Glissez-déposez votre resourcepack ici ou cliquez pour sélectionner un fichier"
-                dropzone.style.color = '#555';
-                downloadButton.textContent = "Télécharger";
-                downloadButton.disabled = true;
-                fileInput.files = null;
-                alert("Le pack n'est pas valide.")
-          }
-
-            convertedPack.generateAsync({type:"blob"}).then(function(content) {
-                outputFileContent[dst] = content;
-                outputFileName = inputFile.name;
-                downloadButton.disabled = false;
-                downloadButton.textContent = "Télécharger";
-
-            });
-        });
-
-    });
+            if (!convertedPack) {
+                  uploadText.textContent = "Glissez-déposez votre resourcepack ici ou cliquez pour sélectionner un fichier"
+                  dropzone.style.color = '#555';
+                  downloadButton.textContent = "Télécharger";
+                  downloadButton.disabled = true;
+                  fileInput.files = null;
+                  alert("Le pack n'est pas valide.")
+            }
+  
+              convertedPack.generateAsync({type:"blob"}).then(function(content) {
+                  outputFileContent[dst] = content;
+                  outputFileName = inputFile.name;
+                  downloadButton.disabled = false;
+                  downloadButton.textContent = "Télécharger";
+  
+              });
+          });
+    })
 }
